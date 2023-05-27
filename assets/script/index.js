@@ -9,6 +9,14 @@ function toggleTheme() {
   let mode = label.html();
   mode = mode == "Light Mode" ? "Dark Mode" : "Light Mode";
   $(label).html(mode);
+
+  // toggle logo
+  let src = $("#nav_Logo").attr("src");
+  src =
+    src == "./assets/img/logo/logo_light.png"
+      ? "./assets/img/logo/logo_dark.png"
+      : "./assets/img/logo/logo_light.png";
+  $("#nav_Logo").attr("src", src);
 }
 
 // main -----------------------------------------------------
