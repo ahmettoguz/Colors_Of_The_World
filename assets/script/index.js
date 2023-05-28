@@ -43,7 +43,6 @@ function perform_Theme_Change() {
   // change overall theme
   $("body").attr("data-bs-theme", theme_Mode);
 
-  // change switch
   if (theme_Mode == "dark") {
     // change switch status for the first run
     $("#theme_Switch").prop("checked", true);
