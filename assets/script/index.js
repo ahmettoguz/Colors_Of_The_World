@@ -59,9 +59,9 @@ function perform_Theme_Change() {
     $("#nav_Logo").attr("src", "./assets/img/logo/logo_dark.png");
 
     // change background hexagons
-    output = "./assets/img/hexagon/dark_hexagon_2.jpg";
+    output = "./assets/img/hexagon/dark_hexagon_1.jpg";
     output = "url('" + output + "')";
-    $(".section").css("background-image", output);
+    $(".section_Odd").css("background-image", output);
   } else {
     // change switch status for the first run
     $("#theme_Switch").prop("checked", false);
@@ -77,9 +77,9 @@ function perform_Theme_Change() {
     $("#nav_Logo").attr("src", "./assets/img/logo/logo_light.png");
 
     // change background hexagons
-    output = "./assets/img/hexagon/light_hexagon6.jpg";
+    output = "./assets/img/hexagon/light_hexagon1.jpg";
     output = "url('" + output + "')";
-    $(".section").css("background-image", output);
+    $(".section_Odd").css("background-image", output);
   }
 }
 
