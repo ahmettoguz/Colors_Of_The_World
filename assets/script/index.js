@@ -24,13 +24,12 @@ function scrollElementVisible() {
     $(element).css("opacity", 0);
     sections_Visibility[i] = false;
 
-    // mission and vision 1.5
     if (
       sections_Visibility[i] == false &&
       scrollPosition / screenHeight > i + 0.5 &&
       scrollPosition / screenHeight < i + 2.5
     ) {
-      $(element).animate({ opacity: 1 }, 1000);
+      $(element).animate({ opacity: 1 }, 750);
       sections_Visibility[i] = true;
     }
   }
@@ -102,8 +101,8 @@ function initialize_Theme_Mode() {
 // main -----------------------------------------------------
 $(function () {
   // scroll top
-  // unutma
-  $("html, body").scrollTop(0);
+  $("html").stop().animate({ scrollTop: 0 }, 100);
+  $("body").stop().animate({ scrollTop: 0 }, 100);
 
   // make elements invisible for scroll
   scrollElementInvisible();
