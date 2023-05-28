@@ -1,5 +1,6 @@
 let sections_Visibility = [null, null, null, null, null, null, null, null];
 let screenHeight = window.innerHeight;
+let screenWidth = window.innerWidth;
 let scrollPosition = window.scrollY;
 let theme_Mode = null;
 
@@ -119,16 +120,17 @@ $(function () {
   // scroll event
   window.addEventListener("scroll", function () {
     screenHeight = window.innerHeight;
+    screenWidth = window.innerWidth;
     scrollPosition = window.scrollY;
 
     // change nav bar constantly
     if (scrollPosition / screenHeight > 0.2) {
-      if ($("nav").hasClass("opacity-100")) {
+      if ($("nav").hasClass("opacity-100") && screenWidth > 768) {
         $("nav").addClass("opacity-75");
         $("nav").removeClass("opacity-100");
       }
     } else {
-      if ($("nav").hasClass("opacity-75")) {
+      if ($("nav").hasClass("opacity-75") && screenWidth > 768) {
         $("nav").addClass("opacity-100");
         $("nav").removeClass("opacity-75");
       }
