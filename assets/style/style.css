@@ -38,7 +38,7 @@ p {
 .nav-link ~ span {
   display: block;
   position: relative;
-  left: 5px;
+
   width: 0%;
   height: 2px;
   border-radius: 5px;
@@ -51,7 +51,7 @@ p {
 }
 
 .nav-link:hover ~ span {
-  width: 86%;
+  width: 100%;
 }
 /* navigation bar end */
 
