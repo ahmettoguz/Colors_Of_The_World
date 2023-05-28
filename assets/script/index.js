@@ -124,15 +124,16 @@ $(function () {
     scrollPosition = window.scrollY;
 
     // change nav bar constantly
+    let element = $("nav");
+    let opacity = element.css("opacity");
+
     if (scrollPosition / screenHeight > 0.2) {
-      if ($("nav").hasClass("opacity-100") && screenWidth > 768) {
-        $("nav").addClass("opacity-75");
-        $("nav").removeClass("opacity-100");
+      if (opacity == 1 && screenWidth > 768) {
+        $(element).stop().animate({ opacity: 0.75 }, 300, "swing");
       }
     } else {
-      if ($("nav").hasClass("opacity-75") && screenWidth > 768) {
-        $("nav").addClass("opacity-100");
-        $("nav").removeClass("opacity-75");
+      if (opacity != 1 && screenWidth > 768) {
+        $(element).stop().animate({ opacity: 1 }, 300, "swing");
       }
     }
 
