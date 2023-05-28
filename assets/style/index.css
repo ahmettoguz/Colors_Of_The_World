@@ -112,6 +112,19 @@ p {
 }
 /* section 2 end */
 
+/* section even */
+.section_Even_Box {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: 500ms ease;
+}
+
+.section_Even_Box:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
+}
+
+/* section even end */
+
 /* section odds */
 .section_Odd_Box {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
@@ -122,5 +135,4 @@ p {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
   transform: scale(1.05);
 }
-
 /* section odds end */
