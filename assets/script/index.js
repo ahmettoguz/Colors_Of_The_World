@@ -1,39 +1,38 @@
-let vision_and_mission_visible = null;
-let section2_Visible = null;
+let sections_Visibility = [null, null, null];
 let screenHeight = window.innerHeight;
 let scrollPosition = window.scrollY;
 let theme_Mode = null;
 
 function scrollElementInvisible() {
-  // make mission and vision invisible
+  // make sections invisible
   setTimeout(() => {
-    $(".card").css("opacity", 0);
-    vision_and_mission_visible = false;
+    for (let i = 0; i < sections_Visibility.length; i++) {
+      let text = `#section${i + 1}_Box`;
+      let element = text.valueOf();
 
-    $("#section2_Box").css("opacity", 0);
-    section2_Visible = false;
+      $(element).css("opacity", 0);
+      sections_Visibility[i] = false;
+    }
   }, 500);
 }
 
 function scrollElementVisible() {
-  // mission and vision 1.5
-  if (
-    vision_and_mission_visible == false &&
-    scrollPosition / screenHeight > 0.5 &&
-    scrollPosition / screenHeight < 2.5
-  ) {
-    $(".card").animate({ opacity: 1 }, 1000);
-    vision_and_mission_visible = true;
-  }
+  for (let i = 0; i < sections_Visibility.length; i++) {
+    let text = `#section${i + 1}_Box`;
+    let element = text.valueOf();
 
-  //section 2 2.5
-  if (
-    section2_Visible == false &&
-    scrollPosition / screenHeight > 1.5 &&
-    scrollPosition / screenHeight < 3.5
-  ) {
-    $("#section2_Box").animate({ opacity: 1 }, 1000);
-    section2_Visible = true;
+    $(element).css("opacity", 0);
+    sections_Visibility[i] = false;
+
+    // mission and vision 1.5
+    if (
+      sections_Visibility[i] == false &&
+      scrollPosition / screenHeight > i + 0.5 &&
+      scrollPosition / screenHeight < i + 2.5
+    ) {
+      $(element).animate({ opacity: 1 }, 1000);
+      sections_Visibility[i] = true;
+    }
   }
 }
 
