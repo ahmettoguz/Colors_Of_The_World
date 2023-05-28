@@ -25,7 +25,6 @@ function toggleTheme() {
       ? "./assets/img/hexagon/dark_hexagon_2.jpg"
       : "./assets/img/hexagon/light_hexagon6.jpg";
   output = "url('" + output + "')";
-  console.log(output);
   $(".section").css("background-image", output);
 }
 

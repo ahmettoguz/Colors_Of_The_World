@@ -49,12 +49,13 @@
 
 .section {
   /* font-family: "Montserrat", sans-serif; */
-
+  min-height: 100vh;
   background-image: url(../img/hexagon/light_hexagon6.jpg);
   /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 p {
