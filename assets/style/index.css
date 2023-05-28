@@ -88,10 +88,12 @@ p {
 } */
 
 .light-scrollbar ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
   background-image: linear-gradient(130deg, #e08c89, #f4ba51, #84d7e8);
 }
 
 .dark-scrollbar ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
   background-image: linear-gradient(130deg, black, white, black);
 }
 /* scroll bar end */

@@ -21,7 +21,7 @@ Chore – changes that do not relate to a fix or feature and don't modify src or
 
 Refactor – refactored code that neither fixes a bug nor adds a feature
 
-Fix– bug fixes
+Fix – bug fixes
 
 Style– changes that do not affect the meaning of the code, likely related to code formatting such as white-space, missing semi-colons, and so on.
 
