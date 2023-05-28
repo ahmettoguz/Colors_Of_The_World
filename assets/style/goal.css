@@ -1,0 +1,29 @@
+body {
+  background-image: url(../img/goal.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.paragraph_1,
+.paragraph_3 {
+  left: -150%;
+}
+.paragraph_2,
+.paragraph_4 {
+  left: 150%;
+}
+
+.card {
+  opacity: 0;
+  border-left: 3px solid black;
+  transition: 500ms border ease, 500ms transform ease, 2000ms left ease,
+    4000ms opacity ease;
+  position: relative;
+}
+
+.card:hover {
+  border-left: 6px solid transparent;
+  transform: scale(1.03);
+}
