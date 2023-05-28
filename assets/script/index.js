@@ -28,35 +28,46 @@ function perform_Theme_Change() {
   localStorage.setItem("theme_Mode", theme_Mode);
 
   // change overall theme
-  const element = document.body;
-  element.dataset.bsTheme = theme_Mode;
+  $("body").attr("data-bs-theme", theme_Mode);
 
   // change switch
   if (theme_Mode == "dark") {
+    // change switch status for the first run
     $("#theme_Switch").prop("checked", true);
+
+    //chnage scroll bar color
+    $("html").addClass("dark-scrollbar");
+    $("html").removeClass("light-scrollbar");
+
+    // change label of the switch
+    $(`label.form-check-label[for="theme_Switch"]`).html("Dark Mode");
+
+    // change logo
+    $("#nav_Logo").attr("src", "./assets/img/logo/logo_dark.png");
+
+    // change background hexagons
+    output = "./assets/img/hexagon/dark_hexagon_2.jpg";
+    output = "url('" + output + "')";
+    $(".section").css("background-image", output);
   } else {
+    // change switch status for the first run
     $("#theme_Switch").prop("checked", false);
+
+    // chnage scroll bar color
+    $("html").addClass("light-scrollbar");
+    $("html").removeClass("dark-scrollbar");
+
+    // change label of the switch
+    $(`label.form-check-label[for="theme_Switch"]`).html("Light Mode");
+
+    // change logo
+    $("#nav_Logo").attr("src", "./assets/img/logo/logo_light.png");
+
+    // change background hexagons
+    output = "./assets/img/hexagon/light_hexagon6.jpg";
+    output = "url('" + output + "')";
+    $(".section").css("background-image", output);
   }
-
-  // toggle label of switch
-  const label = $(`label.form-check-label[for="theme_Switch"]`);
-  let output = theme_Mode == "dark" ? "Dark Mode" : "Light Mode";
-  $(label).html(output);
-
-  // toggle logo
-  src =
-    theme_Mode == "dark"
-      ? "./assets/img/logo/logo_dark.png"
-      : "./assets/img/logo/logo_light.png";
-  $("#nav_Logo").attr("src", src);
-
-  // toggle background hexagons
-  output =
-    theme_Mode == "dark"
-      ? "./assets/img/hexagon/dark_hexagon_2.jpg"
-      : "./assets/img/hexagon/light_hexagon6.jpg";
-  output = "url('" + output + "')";
-  $(".section").css("background-image", output);
 }
 
 function toggleTheme() {
