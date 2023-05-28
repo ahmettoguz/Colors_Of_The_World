@@ -1,2 +1,8 @@
+Features:
 Theme configured as dark and light.
 Localstorage keeps last status of the theme.
+
+
+-----
+Problems:
+unutma diye not düştüm açmayı unutma

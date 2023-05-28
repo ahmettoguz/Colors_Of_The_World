@@ -89,7 +89,7 @@ function initialize_Theme_Mode() {
 // main -----------------------------------------------------
 $(function () {
   // scroll top
-  $(this).scrollTop(0);
+  // $(this).scrollTop(0); // unutma
 
   // make elements invisible for scroll
   scrollElementInvisible();
