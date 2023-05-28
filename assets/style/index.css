@@ -140,6 +140,18 @@ p {
 }
 /* section 6 end */
 
+/* section 8  */
+#section_8 {
+  filter: saturate(1);
+
+  background-image: url(../img/section_8.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* section 8 end */
+
 /* section even */
 .section_Even_Box {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
