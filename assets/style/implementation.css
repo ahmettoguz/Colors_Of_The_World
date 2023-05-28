@@ -1,0 +1,64 @@
+body {
+  background-image: url(../img/implementation.jpg);
+  background-size: cover;
+  background-position: cover;
+  /* background-repeat: no-repeat; */
+}
+
+/* body {
+    background-image: url(../img/goal.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+   */
+
+.card {
+  /* opacity: 0; */
+  border-left: 3px solid black;
+  transition: 500ms border ease, 500ms transform ease, 2000ms left ease,
+    4000ms opacity ease;
+  position: relative;
+}
+
+.card:hover {
+  border-left: 6px solid transparent;
+  transform: scale(1.03);
+}
+
+.summary,
+.step_1,
+.step_2,
+.step_3,
+.step_4,
+.step_5,
+.step_6 {
+  opacity: 0;
+  position: relative;
+  transition: 500ms border ease, 500ms top ease, 500ms transform ease,
+    4000ms opacity ease;
+}
+
+.summary {
+  top: -150%;
+}
+
+.step_1 {
+  left: -150%;
+}
+.step_2 {
+  left: 150%;
+}
+.step_3 {
+  left: -200%;
+}
+.step_4 {
+  left: 200%;
+}
+.step_5 {
+  left: -300%;
+}
+.step_6 {
+  left: 300%;
+}
