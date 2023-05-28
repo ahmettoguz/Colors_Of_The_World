@@ -176,3 +176,19 @@ p {
   transform: scale(1.05);
 }
 /* section odds end */
+
+/* footer */
+
+footer {
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(90deg, gray -150%, black 50%, gray 250%);
+  text-align: center;
+}
+
+footer a {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+/* footer end */
