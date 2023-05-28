@@ -61,7 +61,10 @@ function perform_Theme_Change() {
     // change background hexagons
     output = "./assets/img/hexagon/dark_hexagon_1.jpg";
     output = "url('" + output + "')";
-    $(".section_Odd").css("background-image", output);
+    $(".section_1, .section_5").css("background-image", output);
+    output = "./assets/img/hexagon/dark_hexagon_2.png";
+    output = "url('" + output + "')";
+    $(".section_3, .section_7").css("background-image", output);
   } else {
     // change switch status for the first run
     $("#theme_Switch").prop("checked", false);
@@ -79,7 +82,16 @@ function perform_Theme_Change() {
     // change background hexagons
     output = "./assets/img/hexagon/light_hexagon1.jpg";
     output = "url('" + output + "')";
-    $(".section_Odd").css("background-image", output);
+    $(".section_1").css("background-image", output);
+    output = "./assets/img/hexagon/light_hexagon2.jpg";
+    output = "url('" + output + "')";
+    $(".section_3").css("background-image", output);
+    output = "./assets/img/hexagon/light_hexagon3.jpg";
+    output = "url('" + output + "')";
+    $(".section_5").css("background-image", output);
+    output = "./assets/img/hexagon/light_hexagon4.jpg";
+    output = "url('" + output + "')";
+    $(".section_7").css("background-image", output);
   }
 }
 
