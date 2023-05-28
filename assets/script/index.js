@@ -1,4 +1,4 @@
-let sections_Visibility = [null, null, null, null, null];
+let sections_Visibility = [null, null, null, null, null, null];
 let screenHeight = window.innerHeight;
 let scrollPosition = window.scrollY;
 let theme_Mode = null;
@@ -101,8 +101,8 @@ function initialize_Theme_Mode() {
 // main -----------------------------------------------------
 $(function () {
   // scroll top
-  $("html").stop().animate({ scrollTop: 0 }, 100);
-  $("body").stop().animate({ scrollTop: 0 }, 100);
+  // $("html").stop().animate({ scrollTop: 0 }, 100);
+  // $("body").stop().animate({ scrollTop: 0 }, 100);
 
   // make elements invisible for scroll
   scrollElementInvisible();
