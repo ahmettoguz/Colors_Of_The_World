@@ -18,6 +18,16 @@
     <!-- font-family: 'Montserrat', sans-serif; -->
     <!-- monsterrat font end -->
 
+    <!-- raleway font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <!-- raleway font end -->
+
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -58,12 +68,18 @@
     <title>Colors of the world</title>
   </head>
   <body data-bs-theme="light">
+    <!-- nav start -->
     <nav
-      class="navbar navbar-expand-md navbar-light bg-body-tertiary sticky-top p-0"
+      class="navbar navbar-expand-md navbar-light bg-body-tertiary fixed-top opacity-75 p-0"
     >
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="./assets/img/logo/logo_light.png" alt="Colors of the World" width="175" id="nav_Logo" />
+          <img
+            src="./assets/img/logo/logo_light.png"
+            alt="Colors of the World"
+            width="175"
+            id="nav_Logo"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -117,5 +133,68 @@
         </div>
       </div>
     </nav>
+    <!-- nav end -->
+
+    <!-- content start -->
+    <div class="container-fluid p-0">
+      <div class="cover_Page_1 bg-image vh-100">
+        <div class="container-fluid">
+          <div
+            class="row justify-content-center align-items-center"
+            style="height: 100vh"
+          >
+            <div class="col-auto position-relative">
+              <div
+                class="bg-body-tertiary bg-opacity-75 p-5 rounded-5 border border-1 border-black shadow"
+                id="cover_Page_1_Title_Container"
+              >
+                <h1 class="text-center display-1 opacity-100">
+                  Colors of the World
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vision and Mission -->
+
+      <div
+        class="section section_1 p-lg-5 border-2 border-secondary-subtle border-top border-bottom shadow-lg"
+      >
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="card border-dark-subtle mb-3">
+              <div class="card-header border-dark-subtle text-center">
+                <h2 class="mb-0">Vision and Mission</h2>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">
+                  Embracing the colors of the world, our vision is to foster a
+                  sustainable global community where every facet of life
+                  reflects this harmony. We endeavor to ignite inspiration and
+                  empower individuals, communities, and organizations to embrace
+                  environmentally conscious practices, fostering a coexistence
+                  in tune with nature. Guided by the vibrant colors of the
+                  world, our mission propels us to forefront sustainable
+                  practices and conserve biodiversity. Leveraging advanced
+                  greenhouse technologies, we strive to cultivate and safeguard
+                  endemic plant species, protect natural habitats, and raise
+                  awareness about the imperative of environmental stewardship.
+                  Our commitment lies in harnessing innovation, collaboration,
+                  and education to shape a greener future for generations to
+                  come. Merging our unwavering passion for sustainability with
+                  cutting-edge techniques, we aspire to leave a lasting impact
+                  on the preservation and restoration of the planet's diverse
+                  and rich biodiversity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content end -->
   </body>
 </html>

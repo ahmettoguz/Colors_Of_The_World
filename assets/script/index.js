@@ -4,19 +4,29 @@ function toggleTheme() {
   element.dataset.bsTheme =
     element.dataset.bsTheme == "light" ? "dark" : "light";
 
+  // get theme mode for other elements
+  const mode = element.dataset.bsTheme;
+
   // toggle label
   const label = $(`label.form-check-label[for="theme_Switch"]`);
-  let mode = label.html();
-  mode = mode == "Light Mode" ? "Dark Mode" : "Light Mode";
-  $(label).html(mode);
+  let output = mode == "dark" ? "Dark Mode" : "Light Mode";
+  $(label).html(output);
 
   // toggle logo
-  let src = $("#nav_Logo").attr("src");
   src =
-    src == "./assets/img/logo/logo_light.png"
+    mode == "dark"
       ? "./assets/img/logo/logo_dark.png"
       : "./assets/img/logo/logo_light.png";
   $("#nav_Logo").attr("src", src);
+
+  // toggle background hexagons
+  output =
+    mode == "dark"
+      ? "./assets/img/hexagon/dark_hexagon_2.jpg"
+      : "./assets/img/hexagon/light_hexagon6.jpg";
+  output = "url('" + output + "')";
+  console.log(output);
+  $(".section").css("background-image", output);
 }
 
 // main -----------------------------------------------------
