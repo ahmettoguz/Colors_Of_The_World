@@ -1,1 +1,1 @@
-Theme configured as changable.
+Theme configured as dark and light.

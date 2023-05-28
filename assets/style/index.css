@@ -60,6 +60,11 @@
 
 p {
   text-indent: 20px;
+  overflow: hidden;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 17;
+  -webkit-box-orient: vertical;
 }
 
 .card {
