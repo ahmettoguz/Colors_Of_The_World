@@ -1,1 +1,2 @@
 Theme configured as dark and light.
+Localstorage keeps last status of the theme.
