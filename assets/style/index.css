@@ -110,13 +110,23 @@ p {
 
 /* section 2  */
 #section_2 {
-  background-image: url(../img/pexels-mathias-reding-4394221.jpg);
+  background-image: url(../img/section_2.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* section 2 end */
+
+/* section 4  */
+#section_4 {
+  background-image: url(../img/pexels6.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* section 2 end */
+/* section 4 end */
 
 /* section even */
 .section_Even_Box {

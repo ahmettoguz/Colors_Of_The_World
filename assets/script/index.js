@@ -1,4 +1,4 @@
-let sections_Visibility = [null, null, null, null];
+let sections_Visibility = [null, null, null, null, null];
 let screenHeight = window.innerHeight;
 let scrollPosition = window.scrollY;
 let theme_Mode = null;
