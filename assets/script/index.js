@@ -1,4 +1,5 @@
 let vision_and_mission_visible = null;
+let section2_Visible = null;
 let screenHeight = window.innerHeight;
 let scrollPosition = window.scrollY;
 let theme_Mode = null;
@@ -8,11 +9,14 @@ function scrollElementInvisible() {
   setTimeout(() => {
     $(".card").css("opacity", 0);
     vision_and_mission_visible = false;
+
+    $("#section2_Box").css("opacity", 0);
+    section2_Visible = false;
   }, 500);
 }
 
 function scrollElementVisible() {
-  // mission and vision
+  // mission and vision 1.5
   if (
     vision_and_mission_visible == false &&
     scrollPosition / screenHeight > 0.5 &&
@@ -20,6 +24,16 @@ function scrollElementVisible() {
   ) {
     $(".card").animate({ opacity: 1 }, 1000);
     vision_and_mission_visible = true;
+  }
+
+  //section 2 2.5
+  if (
+    section2_Visible == false &&
+    scrollPosition / screenHeight > 1.5 &&
+    scrollPosition / screenHeight < 3.5
+  ) {
+    $("#section2_Box").animate({ opacity: 1 }, 1000);
+    section2_Visible = true;
   }
 }
 
@@ -89,7 +103,8 @@ function initialize_Theme_Mode() {
 // main -----------------------------------------------------
 $(function () {
   // scroll top
-  // $(this).scrollTop(0); // unutma
+  // unutma
+  $("html, body").scrollTop(0);
 
   // make elements invisible for scroll
   scrollElementInvisible();
