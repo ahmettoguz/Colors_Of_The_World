@@ -36,8 +36,8 @@ body {
 .step_6 {
   opacity: 0;
   position: relative;
-  transition: 500ms border ease, 500ms top ease, 500ms transform ease,
-    4000ms opacity ease;
+  transition: 500ms border ease, 500ms top ease, 500ms left ease,
+    500ms transform ease, 3000ms opacity ease;
 }
 
 .summary {
