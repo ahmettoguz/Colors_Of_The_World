@@ -1,7 +1,7 @@
 body {
   background-image: url(../img/implementation.jpg);
   background-size: cover;
-  background-position: cover;
+  /* background-position: cover; */
   /* background-repeat: no-repeat; */
 }
 
