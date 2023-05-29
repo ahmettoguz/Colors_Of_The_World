@@ -5,6 +5,10 @@ body {
   /* background-repeat: no-repeat; */
 }
 
+.flip-card {
+  box-shadow: 0 0 20px -5px silver, 0 0 8px -2px gray, 0 0 3px black;
+}
+
 .member_Name {
   font-family: "Montserrat", sans-serif;
 }
@@ -18,14 +22,26 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 250px;
-  box-shadow: 0 0 8px -2px silver, 0 0 3px black;
+  box-shadow: 0 0 20px -5px silver, 0 0 8px -2px gray, 0 0 3px black;
   /* object-fit: cover; */
 }
 
 .member_Image_1 {
   background-size: 120%;
-  background-image: url("../img/member/ahmo2.jpg");
+  background-image: url("../img/member/Ahmet\ Oğuz\ Ergin.jpg");
   background-position: center 39%;
+}
+
+.member_Image_2 {
+  background-size: 110%;
+  background-image: url("../img/member/Aleyna\ Hafsa\ Ersin.png");
+  background-position: 50% 39%;
+}
+
+.member_Image_2 {
+  background-size: 110%;
+  background-image: url("../img/member/Aleyna\ Hafsa\ Ersin.png");
+  background-position: 50% 39%;
 }
 /* 
 .card {
