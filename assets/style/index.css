@@ -8,7 +8,7 @@ p {
 
 /* cover page  */
 #section_0 {
-  background-image: url(../img/section_0.jpg);
+  background-image: url(../img/background/section_0.jpg);
   background-attachment: fixed;
   background-position: start;
   background-size: cover;
@@ -45,7 +45,7 @@ p {
 
 /* section 2  */
 #section_2 {
-  background-image: url(../img/section_2.jpg);
+  background-image: url(../img/background/section_2.jpg);
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
@@ -55,7 +55,7 @@ p {
 
 /* section 4  */
 #section_4 {
-  background-image: url(../img/section_4.jpg);
+  background-image: url(../img/background/section_4.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -67,7 +67,7 @@ p {
 #section_6 {
   filter: saturate(1);
 
-  background-image: url(../img/section_6.jpg);
+  background-image: url(../img/background/section_6.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -79,7 +79,7 @@ p {
 #section_8 {
   filter: saturate(1);
 
-  background-image: url(../img/section_8.jpg);
+  background-image: url(../img/background/section_8.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
