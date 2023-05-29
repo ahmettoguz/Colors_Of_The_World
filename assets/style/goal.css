@@ -6,13 +6,17 @@ body {
   background-attachment: fixed;
 }
 
-.paragraph_1,
-.paragraph_3 {
-  left: -150%;
+.paragraph_1 {
+  left: -100%;
 }
-.paragraph_2,
+.paragraph_3 {
+  left: -250%;
+}
+.paragraph_2 {
+  left: 250%;
+}
 .paragraph_4 {
-  left: 150%;
+  left: 100%;
 }
 
 .card {
