@@ -46,6 +46,12 @@ body {
 
 .member_Image_4 {
   background-size: 100%;
+  background-image: url("../img/member/Şevval\ Zeynep\ Çiçek.png");
+  background-position: 50% 35%;
+}
+
+.member_Image_5 {
+  background-size: 100%;
   background-image: url("../img/member/Mehmet\ Ali\ Sümerman.jpg");
   background-position: 50% 39%;
 }
