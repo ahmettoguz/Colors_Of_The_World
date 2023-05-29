@@ -1,0 +1,27 @@
+body {
+  background-image: url(../img/species.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .card {
+    border-left: 3px solid black;
+    transition: 500ms border ease, 500ms transform ease, 2000ms left ease,
+      4000ms opacity ease;
+    position: relative;
+  }
+  
+  .card:hover {
+    border-left: 6px solid transparent;
+    transform: scale(1.03);
+  }
+  
+  .box_1,
+  .box_2,
+  .box_3 {
+    opacity: 0;
+    transition: 500ms border ease, 500ms top ease, 500ms left ease,
+      500ms transform ease, 3000ms opacity ease;
+  }
+   */
