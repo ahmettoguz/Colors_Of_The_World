@@ -19,6 +19,6 @@
   transform: rotateY(180deg) translateZ(-100px);
 }
 
-/* .flip-card {
+.flip-card {
   transform: rotateY(180deg) translateZ(-100px);
-} */
+}
