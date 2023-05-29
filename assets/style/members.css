@@ -5,39 +5,64 @@ body {
   /* background-repeat: no-repeat; */
 }
 
+.flip-card {
+  box-shadow: 0 0 20px -5px silver, 0 0 8px -2px gray, 0 0 3px black;
+}
+
+.member_Name {
+  font-family: "Montserrat", sans-serif;
+}
+
+.member_Title {
+  font-family: "Montserrat", sans-serif;
+  text-indent: 0px;
+}
+
 .member_Image {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+  box-shadow: 0 0 20px -5px silver, 0 0 8px -2px gray, 0 0 3px black;
+  /* object-fit: cover; */
 }
 
 .member_Image_1 {
-  background-image: url(../img/member/ahmo1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-  background-position: 0% 35%;
-  width: 200px;
-  height: 175px;
-  /* background-repeat: no-repeat; */
+  background-size: 120%;
+  background-image: url("../img/member/Ahmet\ Oğuz\ Ergin.jpg");
+  background-position: center 39%;
 }
 
-.member_Image_Container {
+.member_Image_2 {
+  background-size: 110%;
+  background-image: url("../img/member/Aleyna\ Hafsa\ Ersin.png");
+  background-position: 50% 39%;
 }
 
-/* .card {
-  border-left: 3px solid black;
-  transition: 500ms border ease, 500ms transform ease, 2000ms left ease,
-    4000ms opacity ease;
-  position: relative;
+.member_Image_3 {
+  background-size: 110%;
+  background-image: url("../img/member/Atakan\ Sevgen.jpg");
+  background-position: 50% 39%;
 }
 
-.card:hover {
-  border-left: 6px solid transparent;
-  transform: scale(1.03);
+.member_Image_4 {
+  background-size: 100%;
+  background-image: url("../img/member/Mehmet\ Ali\ Sümerman.jpg");
+  background-position: 50% 39%;
 }
-
-.box_1,
-.box_2,
-.box_3 {
-  opacity: 0;
-  transition: 500ms border ease, 500ms top ease, 500ms left ease,
-    500ms transform ease, 3000ms opacity ease;
+/* 
+.card {
+  height: 350px;
 } */
+
+/* Responsive styles */
+@media only screen and (max-width: 400px) {
+  .member_Image {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .member_Image {
+    height: 200px;
+  }
+}
