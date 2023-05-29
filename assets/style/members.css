@@ -38,9 +38,15 @@ body {
   background-position: 50% 39%;
 }
 
-.member_Image_2 {
+.member_Image_3 {
   background-size: 110%;
-  background-image: url("../img/member/Aleyna\ Hafsa\ Ersin.png");
+  background-image: url("../img/member/Atakan\ Sevgen.jpg");
+  background-position: 50% 39%;
+}
+
+.member_Image_4 {
+  background-size: 100%;
+  background-image: url("../img/member/Mehmet\ Ali\ Sümerman.jpg");
   background-position: 50% 39%;
 }
 /* 
