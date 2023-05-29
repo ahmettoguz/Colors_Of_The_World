@@ -25,8 +25,12 @@ body {
 .member_Image_1 {
   background-size: 120%;
   background-image: url("../img/member/ahmo2.jpg");
-  background-position: center 41%;
+  background-position: center 39%;
 }
+/* 
+.card {
+  height: 350px;
+} */
 
 /* Responsive styles */
 @media only screen and (max-width: 400px) {
