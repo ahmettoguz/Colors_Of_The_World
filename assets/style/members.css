@@ -17,7 +17,7 @@ body {
 .member_Image {
   background-position: center;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 250px;
   box-shadow: 0 0 8px -2px silver, 0 0 3px black;
   /* object-fit: cover; */
 }
@@ -28,6 +28,7 @@ body {
   background-position: center 41%;
 }
 
+/* Responsive styles */
 @media only screen and (max-width: 400px) {
   .member_Image {
     height: 200px;
