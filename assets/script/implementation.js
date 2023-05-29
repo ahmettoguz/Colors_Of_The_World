@@ -1,9 +1,9 @@
 $(function () {
   $(".summary").css({ top: 0, opacity: 1 });
 
-  $("html, body").animate({ scrollTop: 0 }, 100);
+  $("html, body").animate({ scrollTop: 0 }, 10);
 
-  let totalDelay = 1000;
+  let totalDelay = 200;
 
   for (let i = 1; i <= 6; i++) {
     let text = ".step_" + i;
@@ -18,6 +18,6 @@ $(function () {
 
       $("html, body").animate({ scrollTop: targetOffset - 300 }, 100);
     }, totalDelay);
-    totalDelay += 1000;
+    totalDelay += 500;
   }
 });
