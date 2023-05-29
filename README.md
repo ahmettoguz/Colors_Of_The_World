@@ -1,5 +1,15 @@
 # In progress
 
+---
+
+Small sm ≥576px
+Medium md ≥768px
+Large lg ≥992px
+Extra large xl ≥1200px
+Extra extra large xxl ≥1400px
+
+---
+
 git status
 
 git log --graph --all
@@ -11,7 +21,7 @@ The git revert command will undo only the changes associated with a specific com
 git reset --hard ...commitId...
 git push --force origin
 
--------------------------------------------------------
+---
 
 Docs – changes to the documentation like README
 
@@ -35,4 +45,4 @@ Build – changes that affect the build system or external dependencies
 
 Revert – reverts a previous commit
 
--------------------------------------------------------
+---
