@@ -1,7 +1,7 @@
 <h1 align="center">Colors of the World</h1> <br>
 
 <div align="center">
-    <img width=350 src="assets/img/logo/logo_light.png">
+    <img width=100 src="assets/img/favicon/favicon.png">
 </div>
 
 <br/>
@@ -18,7 +18,7 @@
 
 ## Demo
 
-<br/>
+<a href="https://ahmettoguz.github.io/Colors_Of_The_World/" target="_blank">Visit https://ahmettoguz.github.io/Colors_Of_The_World/</a>
 
 <div align="center">
     <img width=950 src="assets/img/demo/demo.png">
@@ -28,33 +28,24 @@
 
 ## Introduction
 
-This project has been developed for Android using the Java language. The aim of this project is to enable teachers to manage sections in their classes and allow students to register for these classes according to the quotas.
+As Bilkent students, we have prepared an SDG (Sustainable Development Goals) project. I have developed the website for this project. You can access the website through the link provided in the demo and find detailed information about the project. Also you can examine the members of the project from Member page in detail for the Colors of the World project.
 
 <br/>
 
 ## Technologies
 
-* Java
+* HTML
+* JavaScript
+* Css, Bootstrap
 
 <br/>
 
 ## Features
 
-* Custom spinner used.
-* Java files well-structured.
-* Custom launcher icon used.
-* Custom recycler view used.
-* Text blink and color animation used.
-* Validation for user input is performed.
-* Authorization (Login operation) provided.
-* Apk File is added to \app\build\outputs\apk\debug path.
-* Object Oriented concepts used (Inheritance, Interface, Polymorphism).
-* Relational database is used SQLite (Structure of tables in assets folder).
-* Object transference between activities performed (Intent, Bundle, Parcelable).
-* Filtering is performed for courses according to years by the use of custom spinner.
-* Database operations is done (Insert new user and section, Read datas, Update course, Delete section).
-* Authentication (Behavior of the users) provided. For ex.(Teacher cannot delete other teachers section).
-* Gestures used for events (Delete, enroll, unenroll section with fling, display course details with long press).
+* Responsive pages developed for every screen sizes.
+* Dark and light modes provided.
+* There are special animations for every pages.
+* Home page has scroll animation.
 
 <br/>
 
