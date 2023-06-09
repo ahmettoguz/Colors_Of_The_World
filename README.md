@@ -1,48 +1,55 @@
-# In progress
+<h1 align="center">Colors of the World</h1> <br>
 
----
+<div align="center">
+    <img width=100 src="assets/img/favicon/favicon.png">
+</div>
 
-Small sm ≥576px
-Medium md ≥768px
-Large lg ≥992px
-Extra large xl ≥1200px
-Extra extra large xxl ≥1400px
+<br/>
 
----
+## Table of Contents
 
-git status
+- [Demo](#demo)
+- [Introduction](#introduction)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Contributors](#contributors)
 
-git log --graph --all
+<br/>
 
-git reflog
+## Demo
 
-The git revert command will undo only the changes associated with a specific commit. In this git revert example, the third commit added the charlie.html file. When we revert said Git commit, the only file removed from our repository is charlie.html.
+<a href="https://ahmettoguz.github.io/Colors_Of_The_World/" target="_blank">Visit https://ahmettoguz.github.io/Colors_Of_The_World/</a>
 
-git reset --hard ...commitId...
-git push --force origin
+<div align="center">
+    <img width=950 src="assets/img/demo/demo.png">
+</div>
 
----
+<br/>
 
-Docs – changes to the documentation like README
+## Introduction
 
-Feat– feature
+As Bilkent students, we have prepared an SDG (Sustainable Development Goals) project. I have developed the website for this project. You can access the website through the link provided in the demo and find detailed information about the project. Also you can examine the members of the project from Member page in detail for the Colors of the World project.
 
-Chore – changes that do not relate to a fix or feature and don't modify src or test files (for example updating dependencies)
+<br/>
 
-Refactor – refactored code that neither fixes a bug nor adds a feature
+## Technologies
 
-Fix – bug fixes
+* HTML
+* JavaScript
+* Css, Bootstrap
 
-Style– changes that do not affect the meaning of the code, likely related to code formatting such as white-space, missing semi-colons, and so on.
+<br/>
 
-Perf – improves code performance
+## Features
 
-Test– test a feature
+* Responsive pages developed for every screen sizes.
+* Dark and light modes provided.
+* There are special animations for every pages.
+* Home page has scroll animation.
 
-Ci – continuous integration related
+<br/>
 
-Build – changes that affect the build system or external dependencies
+## Contributors
 
-Revert – reverts a previous commit
+<a href="https://github.com/ahmettoguz" target="_blank"><img width=50 height=50 src="https://avatars.githubusercontent.com/u/101711642?v=4"></a>
 
----
