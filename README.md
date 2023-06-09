@@ -1,48 +1,64 @@
-# In progress
+<h1 align="center">Colors of the World</h1> <br>
 
----
+<div align="center">
+    <img width=350 src="assets/img/logo/logo_light.png">
+</div>
 
-Small sm ≥576px
-Medium md ≥768px
-Large lg ≥992px
-Extra large xl ≥1200px
-Extra extra large xxl ≥1400px
+<br/>
 
----
+## Table of Contents
 
-git status
+- [Demo](#demo)
+- [Introduction](#introduction)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Contributors](#contributors)
 
-git log --graph --all
+<br/>
 
-git reflog
+## Demo
 
-The git revert command will undo only the changes associated with a specific commit. In this git revert example, the third commit added the charlie.html file. When we revert said Git commit, the only file removed from our repository is charlie.html.
+<br/>
 
-git reset --hard ...commitId...
-git push --force origin
+<div align="center">
+    <img width=950 src="assets/img/demo/demo.png">
+</div>
 
----
+<br/>
 
-Docs – changes to the documentation like README
+## Introduction
 
-Feat– feature
+This project has been developed for Android using the Java language. The aim of this project is to enable teachers to manage sections in their classes and allow students to register for these classes according to the quotas.
 
-Chore – changes that do not relate to a fix or feature and don't modify src or test files (for example updating dependencies)
+<br/>
 
-Refactor – refactored code that neither fixes a bug nor adds a feature
+## Technologies
 
-Fix – bug fixes
+* Java
 
-Style– changes that do not affect the meaning of the code, likely related to code formatting such as white-space, missing semi-colons, and so on.
+<br/>
 
-Perf – improves code performance
+## Features
 
-Test– test a feature
+* Custom spinner used.
+* Java files well-structured.
+* Custom launcher icon used.
+* Custom recycler view used.
+* Text blink and color animation used.
+* Validation for user input is performed.
+* Authorization (Login operation) provided.
+* Apk File is added to \app\build\outputs\apk\debug path.
+* Object Oriented concepts used (Inheritance, Interface, Polymorphism).
+* Relational database is used SQLite (Structure of tables in assets folder).
+* Object transference between activities performed (Intent, Bundle, Parcelable).
+* Filtering is performed for courses according to years by the use of custom spinner.
+* Database operations is done (Insert new user and section, Read datas, Update course, Delete section).
+* Authentication (Behavior of the users) provided. For ex.(Teacher cannot delete other teachers section).
+* Gestures used for events (Delete, enroll, unenroll section with fling, display course details with long press).
 
-Ci – continuous integration related
+<br/>
 
-Build – changes that affect the build system or external dependencies
+## Contributors
 
-Revert – reverts a previous commit
+<a href="https://github.com/ahmettoguz" target="_blank"><img width=50 height=50 src="https://avatars.githubusercontent.com/u/101711642?v=4"></a>
 
----
