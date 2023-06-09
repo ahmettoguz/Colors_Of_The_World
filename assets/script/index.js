@@ -8,10 +8,9 @@ function scrollElementInvisible() {
   // make sections invisible
   setTimeout(() => {
     for (let i = 0; i < sections_Visibility.length; i++) {
-      let text = `#section${i + 1}_Box`;
-      let element = text.valueOf();
+      let element = $(`#section${i + 1}_Box`);
 
-      $(element).css("opacity", 0);
+      element.css("opacity", 0);
       sections_Visibility[i] = false;
     }
   }, 500);
