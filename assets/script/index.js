@@ -19,18 +19,17 @@ function scrollElementInvisible() {
 
 function scrollElementVisible() {
   for (let i = 0; i < sections_Visibility.length; i++) {
-    let text = `#section${i + 1}_Box`;
-    let element = text.valueOf();
+    let element = $(`#section${i + 1}_Box`);
 
-    $(element).css("opacity", 0);
+    element.css("opacity", 0);
     sections_Visibility[i] = false;
 
     if (
-      sections_Visibility[i] == false &&
+      !sections_Visibility[i] &&
       scrollPosition / screenHeight > i + 0.5 &&
       scrollPosition / screenHeight < i + 2.5
     ) {
-      $(element).animate({ opacity: 1 }, 750);
+      element.animate({ opacity: 1 }, 750);
       sections_Visibility[i] = true;
     }
   }
@@ -108,6 +107,15 @@ function initialize_Theme_Mode() {
   }
 
   perform_Theme_Change();
+}
+
+// debounce function
+function debounce(func, delay) {
+  let timer;
+  return function () {
+    clearTimeout(timer);
+    timer = setTimeout(func, delay);
+  };
 }
 
 // main -----------------------------------------------------
