@@ -22,5 +22,5 @@ body {
 .box_3 {
   opacity: 0;
   transition: 500ms border ease, 500ms top ease, 500ms left ease,
-    100ms transform ease, 1000ms opacity ease;
+    300ms transform ease, 1000ms opacity ease;
 }
