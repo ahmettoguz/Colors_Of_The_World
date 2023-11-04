@@ -53,6 +53,19 @@ p {
 .nav-link:hover ~ span {
   width: 100%;
 }
+
+.theme-icon {
+  cursor: pointer;
+}
+
+.theme-icon i {
+  font-size: 1.5rem;
+  transition: 300ms;
+}
+
+.theme-icon:hover i {
+  transform: rotate(-30deg);
+}
 /* navigation bar end */
 
 /* footer */
