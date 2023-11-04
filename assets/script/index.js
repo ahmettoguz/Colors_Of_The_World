@@ -42,15 +42,12 @@ function perform_Theme_Change() {
   $("body").attr("data-bs-theme", theme_Mode);
 
   if (theme_Mode == "dark") {
-    // change switch status for the first run
-    $("#theme_Switch").prop("checked", true);
+    // change switch icon
+    $(".theme-icon").html(`<i class="fa-solid fa-moon"></i>`);
 
     //chnage scroll bar color
     $("html").addClass("dark-scrollbar");
     $("html").removeClass("light-scrollbar");
-
-    // change label of the switch
-    $(`label.form-check-label[for="theme_Switch"]`).html("Dark Mode");
 
     // change logo
     $("#nav_Logo").attr("src", "./assets/img/logo/logo_dark.png");
@@ -63,15 +60,12 @@ function perform_Theme_Change() {
     output = "url('" + output + "')";
     $(".section_3, .section_7").css("background-image", output);
   } else {
-    // change switch status for the first run
-    $("#theme_Switch").prop("checked", false);
+    // change switch icon
+    $(".theme-icon").html(`<i class="fa-solid fa-brightness"></i>`);
 
     // chnage scroll bar color
     $("html").addClass("light-scrollbar");
     $("html").removeClass("dark-scrollbar");
-
-    // change label of the switch
-    $(`label.form-check-label[for="theme_Switch"]`).html("Light Mode");
 
     // change logo
     $("#nav_Logo").attr("src", "./assets/img/logo/logo_light.png");
@@ -131,7 +125,7 @@ $(function () {
   initialize_Theme_Mode();
 
   // add click event to switch button to change theme
-  $(document).on("click", "#theme_Switch", function () {
+  $(document).on("click", ".theme-icon", function () {
     toggleTheme();
   });
 
