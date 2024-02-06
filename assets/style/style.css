@@ -32,7 +32,7 @@ p {
 
 /* navigation bar */
 nav:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .navbar {
@@ -90,13 +90,5 @@ footer a {
 /* common classes */
 .ts {
   transition: 700ms;
-}
-
-.fullOpacity {
-  opacity: 1;
-}
-
-.midOpacity {
-  opacity: 0.5;
 }
 /* common classes end */

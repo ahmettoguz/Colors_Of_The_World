@@ -1,38 +1,7 @@
-let sections_Visibility = [null, null, null, null, null, null, null, null];
 let screenHeight = window.innerHeight;
 let screenWidth = window.innerWidth;
 let scrollPosition = window.scrollY;
 let theme_Mode = null;
-
-function scrollElementInvisible() {
-  // make sections invisible
-  setTimeout(() => {
-    for (let i = 0; i < sections_Visibility.length; i++) {
-      let element = $(`#section${i + 1}_Box`);
-
-      element.css("opacity", 0);
-      sections_Visibility[i] = false;
-    }
-  }, 500);
-}
-
-function scrollElementVisible() {
-  for (let i = 0; i < sections_Visibility.length; i++) {
-    let element = $(`#section${i + 1}_Box`);
-
-    element.css("opacity", 0);
-    sections_Visibility[i] = false;
-
-    if (
-      !sections_Visibility[i] &&
-      scrollPosition / screenHeight > i + 0.5 &&
-      scrollPosition / screenHeight < i + 2.5
-    ) {
-      element.animate({ opacity: 1 }, 750);
-      sections_Visibility[i] = true;
-    }
-  }
-}
 
 function perform_Theme_Change() {
   // save theme mode
@@ -116,18 +85,15 @@ function performStickyNavigation() {
   const navElement = document.getElementsByTagName("nav")[0];
   const section0 = document.getElementById("section_0");
 
-  // get navigation bar height
-  const navHeight = navElement.getBoundingClientRect().height;
-
   // observer api callback
   const obsCallback = function (entries, observer) {
     const entry = entries[0];
     if (entry.isIntersecting) {
-      navElement.classList.remove("midOpacity");
-      navElement.classList.add("fullOpacity");
+      navElement.classList.remove("opacity-50");
+      navElement.classList.add("opacity-1");
     } else {
-      navElement.classList.remove("fullOpacity");
-      navElement.classList.add("midOpacity");
+      navElement.classList.remove("opacity-1");
+      navElement.classList.add("opacity-50");
     }
   };
 
@@ -142,15 +108,49 @@ function performStickyNavigation() {
   observer.observe(section0);
 }
 
+function animateSections() {
+  // select elements
+  const navElement = document.getElementsByTagName("nav")[0];
+  const sectionElements = document.querySelectorAll(".sctn");
+
+  // get navigation bar height
+  const navHeight = navElement.getBoundingClientRect().height;
+
+  // observer api callback
+  const obsCallback = function (entries, observer) {
+    const [entry] = entries;
+
+    if (!entry.isIntersecting) return;
+
+    let element = document.querySelector(
+      `#${entry.target.getAttribute("id").replace("_", "")}_Box`
+    );
+
+    element.classList.remove("section-hidden");
+    observer.unobserve(entry.target);
+  };
+
+  // observer api options
+  const obsOptions = {
+    root: null,
+    threshold: 0.5,
+    // rootMargin: `-${navHeight}px`,
+  };
+
+  // start observer api for navigation bar
+  const observer = new IntersectionObserver(obsCallback, obsOptions);
+  sectionElements.forEach((element) => {
+    observer.observe(element);
+  });
+}
+
 // main -----------------------------------------------------
+// history.scrollRestoration = "manual";
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
 $(function () {
-  // scroll top when page is loaded or refreshed
-  $("html").stop().animate({ scrollTop: 0 }, 100);
-  $("body").stop().animate({ scrollTop: 0 }, 100);
-
-  // make elements invisible for scroll
-  scrollElementInvisible();
-
   // get theme and initialize page
   theme_Mode = localStorage.getItem("theme_Mode");
   initialize_Theme_Mode();
@@ -163,12 +163,6 @@ $(function () {
   // scroll event for navigation
   performStickyNavigation();
 
-  window.addEventListener("scroll", function () {
-    screenHeight = window.innerHeight;
-    screenWidth = window.innerWidth;
-    scrollPosition = window.scrollY;
-
-    // make elements visible with scroll
-    scrollElementVisible();
-  });
+  // fade in effect in scroll
+  animateSections();
 });
