@@ -111,6 +111,35 @@ function debounce(func, delay) {
   };
 }
 
+function performStickyNavigation() {
+  // select elements
+  const navElement = document.getElementsByTagName("nav")[0];
+  const section0 = document.getElementById("section_0");
+
+  // get navigation bar height
+  const navHeight = navElement.getBoundingClientRect().height;
+
+  // observer api callback
+  const obsCallback = function (entries, observer) {
+    const entry = entries[0];
+    if (entry.isIntersecting) {
+      navElement.style.opacity = 1;
+    } else {
+      navElement.style.opacity = 0.7;
+    }
+  };
+
+  // observer api options
+  const obsOptions = {
+    root: null,
+    threshold: 0.6,
+  };
+
+  // start observer api for navigation bar
+  const observer = new IntersectionObserver(obsCallback, obsOptions);
+  observer.observe(section0);
+}
+
 // main -----------------------------------------------------
 $(function () {
   // scroll top when page is loaded or refreshed
@@ -129,25 +158,13 @@ $(function () {
     toggleTheme();
   });
 
-  // scroll event
+  // scroll event for navigation
+  performStickyNavigation();
+
   window.addEventListener("scroll", function () {
     screenHeight = window.innerHeight;
     screenWidth = window.innerWidth;
     scrollPosition = window.scrollY;
-
-    // change nav bar constantly
-    let element = $("nav");
-    let opacity = element.css("opacity");
-
-    if (scrollPosition / screenHeight > 0.2) {
-      if (opacity == 1 && screenWidth > 768) {
-        $(element).stop().animate({ opacity: 0.75 }, 300, "swing");
-      }
-    } else {
-      if (opacity != 1 && screenWidth > 768) {
-        $(element).stop().animate({ opacity: 1 }, 300, "swing");
-      }
-    }
 
     // make elements visible with scroll
     scrollElementVisible();
