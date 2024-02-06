@@ -123,9 +123,11 @@ function performStickyNavigation() {
   const obsCallback = function (entries, observer) {
     const entry = entries[0];
     if (entry.isIntersecting) {
-      navElement.style.opacity = 1;
+      navElement.classList.remove("midOpacity");
+      navElement.classList.add("fullOpacity");
     } else {
-      navElement.style.opacity = 0.7;
+      navElement.classList.remove("fullOpacity");
+      navElement.classList.add("midOpacity");
     }
   };
 
