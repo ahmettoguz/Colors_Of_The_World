@@ -145,7 +145,7 @@ function animateSections() {
 }
 
 // main -----------------------------------------------------
-// history.scrollRestoration = "manual";
+history.scrollRestoration = "manual";
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
