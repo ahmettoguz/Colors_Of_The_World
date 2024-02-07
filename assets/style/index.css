@@ -91,7 +91,6 @@ p {
 .section_Even_Box,
 .section_Odd_Box {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-  transition: 500ms transform ease, 500ms box-shadow ease;
 }
 
 .section_Even_Box:hover,
@@ -101,3 +100,10 @@ p {
 }
 
 /* section even, odd end */
+
+/* section common */
+.section-hidden {
+  opacity: 0;
+  transform: translateY(200px) scale(0.9);
+}
+/* section common end */

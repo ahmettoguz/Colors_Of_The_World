@@ -31,6 +31,10 @@ p {
 /* scroll bar end */
 
 /* navigation bar */
+nav:hover {
+  opacity: 1 !important;
+}
+
 .navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -82,3 +86,9 @@ footer a {
   text-decoration: none;
 }
 /* footer end */
+
+/* common classes */
+.ts {
+  transition: 700ms;
+}
+/* common classes end */
