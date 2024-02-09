@@ -46,3 +46,13 @@ body {
       500ms transform ease, 3000ms opacity ease;
   }
    */
+
+span {
+  position: absolute;
+  bottom: 10px;
+}
+
+img.card-img-top {
+  user-select: none;
+  max-height: 82%;
+}
